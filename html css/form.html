@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>
+		Build a Survey Form using HTML and CSS
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #05c46b;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #05c46b;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>User Details Form</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="First and last name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="example@domin.com" />
+		</div>
+
+		<div class="form-control">
+			<label for="phone" id="label-phone">
+				Phone
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="tel"
+				id="phone"
+				placeholder="Eg.+447500000000" />
+		</div>
+
+        <div class="form-control">
+			<label for="address" id="label-address">
+				Address
+			</label>
+
+			<!-- Input Type Text -->
+			<textarea rows="5" cols="50" name="Description">
+            </textarea>
+		</div>
+        <div class="form-control">
+			<label for="postcode" id="label-postcode">
+				Post code
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="postcode"
+				placeholder="" />
+		</div>
+        <div class="form-control">
+			<label for="country" id="label-country">
+				Country
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="Country"
+				placeholder="" />
+		</div>
+
+        <div class="form-control">
+			<label for="cardtype" id="label-cardtype">
+				Card Type
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="radio" name="visa" value="Cats">Visa <i class="fa fa-cc-visa"></i>
+        <input type="radio" name="amex" value="Dogs">AmEx <i class="fa fa-cc-amex"></i>	
+        <input type="radio" name="mastercard" value="Birds">Mastercard <i class="fa fa-cc-mastercard"></i>	 
+		</div>
+
+        <div class="form-control">
+			<label for="cardnumber" id="label-cardnumber">
+				Card Number
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="cardnumber"
+				placeholder="" />
+		</div>
+
+        <div class="form-control">
+			<label for="securitycode" id="label-securitycode">
+				Security code
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="securitycode"
+				placeholder="" />
+		</div>
+
+        <div class="form-control">
+			<label for="nameomcard" id="label-nameoncard">
+				Name on card
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="nameoncard"
+				placeholder="Exact name as on the card" />
+		</div>
+
+
+		
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			BUY IT! 
+		</button>
+	</form>
+</body>
+
+</html>
